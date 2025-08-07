@@ -12,7 +12,39 @@ function make_avg(numbers){
     return sum / size;
 }
 
-make_avg([11,25,89,14,65]);
 const output = make_avg([11,25,89,14,65]);
 
 console.log('Average of the given array is: ', output);
+
+
+function make_avg(myNum) {
+    const size = myNum.length;
+    let sum = 0;
+    let i = 0;
+    while(i < size){
+        sum += myNum[i];
+        i++;
+    }
+    return sum / size;
+}
+
+const average = make_avg([50,55,79,104,615]);
+console.log('Average of the given array is: ', average);
+
+
+function new_avg(myNumbers){
+    const lengthOfArray = myNumbers.length;
+    console.log('Length of array is:',lengthOfArray);
+
+    let total = 0;
+    for(num of myNumbers){
+        total += num;
+    }
+    const averageOfMyNumbers = total / lengthOfArray;
+    return averageOfMyNumbers;
+
+}
+
+
+const newOutPut = new_avg([15,250,157,59,57,104]);
+console.log('Average of the given array is: ',newOutPut);
